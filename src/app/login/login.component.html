@@ -1,0 +1,37 @@
+<section class="hello">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Login</h1>
+      </div>
+      
+        <form [formGroup]= "loginForm" (ngSubmit)="login()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"   >
+           
+          <div *ngIf="loginForm.controls['email'].invalid&&loginForm.controls['email'].touched">
+            <small *ngIf="loginForm.controls['email'].errors?.['required']" class="text-danger">Email is Required</small>
+            <small *ngIf="loginForm.controls['email'].errors?.['email']" class="text-danger">Enter Valid Email</small>
+          
+          </div><br>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+         
+          <div *ngIf="loginForm.controls['password'].invalid&&loginForm.controls['password'].touched">
+            <small *ngIf="loginForm.controls['password'].errors?.['required']" class="text-danger">please enter Password</small>
+            <small *ngIf="loginForm.controls['password'].errors?.['minlength']" class="text-danger">Password must be 6 Words</small>
+          
+          </div><br>
+
+          <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">login</button>
+       <br>
+
+        <a routerLink="/signup">New user? click to Signup</a>
+      
+        </div>
+   
