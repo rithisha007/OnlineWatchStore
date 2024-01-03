@@ -1,0 +1,317 @@
+
+<style>
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+.main-wrapper{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.product-div{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    
+    padding-bottom: 0%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    padding: 20px;
+}
+.img-container img{
+    width: 350px;
+    margin: 0 auto;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 2px solid #ff748c;
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-color: #ff748c!important;
+}
+.hover-container div:hover{
+    border-color: #ff748c;
+}
+.hover-container div img{
+    width: 50px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
+}
+.product-name{
+    font-size: 26px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-rating span{
+    margin-right: 6px;
+}
+.product-description{
+    font-weight: 18px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 22px;
+}
+.btn-groups{
+    margin-top: 22px;
+}
+.btn-groups button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups button .fas{
+    margin-right: 8px;
+}
+
+.add-cart-btn{
+    background-color: rgb(255, 145, 163);
+    color: #ffffff;
+    border: 2px solid #ff748c;
+    margin-right: 8px;
+}
+.add-cart-btn:hover{
+    background-color: rgb(255, 145, 163);
+    color:  rgb(255, 145, 163);
+}
+.buy-now-btn{
+    background-color: #000;
+    border: 2px solid #000;
+}
+.buy-now-btn:hover{
+    background-color: rgb(255, 145, 163);
+    color: #000;
+}
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-rating{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.shipping-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Added to wrap the containers in case of a small screen */
+}
+
+.free-shipping-container,
+.payment-container,
+.return-container,
+.secure-transaction-container {
+  flex-basis: calc(25% - 10px); /* Adjust the value to control the width of each container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Added to create space between the containers */
+}
+
+.free-shipping-container .icon,
+.payment-container .icon,
+.return-container .icon,
+.secure-transaction-container .icon {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color:#ff748c;
+}
+
+.free-shipping-container .text,
+.payment-container .text,
+.return-container .text,
+.secure-transaction-container .text {
+  font-size: 14px;
+}
+
+
+
+.btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+ .btn-box a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #f16179;
+  color: #ffffff;
+  border: 1px solid #f16179;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-box a:hover {
+  background-color: transparent;
+  color: #f16179;
+}
+</style>
+
+
+<div class="heading" id="heading">
+  <h1>our shop</h1>
+  <p> <a href="/womens"> << Go to back </a></p>
+  
+</div>
+
+<br><br>
+<div *ngIf="product" class="main-wrapper">
+  <div class="container">
+    <div class="product-div">
+      <div class="product-div-left">
+        <div class="img-container" #imgContainer>
+          <img [src]="mainImageURL" alt="Product Thumbnail" />
+        </div>
+        <div class="hover-container">
+          <div class="active">
+            <img [src]="product.thumbnail" alt="Product Thumbnail" (click)="onImageClick(product.thumbnail)"/>
+          </div>
+          <div *ngFor="let image of product.images; let i">
+            <!-- Attach a click event to each child image and pass the image URL to the onImageClick() method -->
+            <img [src]="image" alt="Product Image" (click)="onImageClick(image)" />
+          </div>
+        </div>
+      </div>
+      <div class="product-div-right">
+        <span class="product-name">{{ product.title }}</span>
+        <span class="product-price">Rs.{{ product.price }}</span>
+        <div class="product-rating">
+          <span>Rating:</span>
+          <span>{{ product.rating }}</span>
+        </div>
+        <p class="product-description">{{ product.description }}</p>
+        <div class="btn-groups">
+          <button class="add-cart-btn" (click)="addToCart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+          <button class="buy-now-btn" (click)="handleBuyNowClick()"><i class="fas fa-shopping-bag"></i>Buy Now</button>
+        </div>
+
+           <!-- Shipping Information Containers -->
+           <div class="shipping-info-container">
+            <!-- Free Shipping Container -->
+            <div class="free-shipping-container">
+              <div class="icon">
+                <i class="fas fa-truck"></i>
+              </div>
+              <div class="text">
+                <span>Free Shipping</span>
+              </div>
+            </div>
+            <!-- Pay on Delivery Container -->
+            <div class="payment-container">
+              <div class="icon">
+                <i class="fas fa-money-bill"></i>
+              </div>
+              <div class="text">
+                <span>Pay on Delivery</span>
+              </div>
+            </div>
+            <!-- 10 Days to Return Container -->
+            <div class="return-container">
+              <div class="icon">
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <div class="text">
+                <span>10 Days to Return</span>
+              </div>
+            </div>
+            <!-- Secure Transaction Container -->
+            <div class="secure-transaction-container">
+              <div class="icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="text">
+                <span>Secure Transaction</span>
+              </div>
+            </div>
+          </div>
+          <!-- End Shipping Information Containers -->
+  
+        </div>
+      </div>
+    </div>
+  </div>

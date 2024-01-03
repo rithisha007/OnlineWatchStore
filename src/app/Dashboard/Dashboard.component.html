@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+     
+      padding: 1rem;
+      border-radius: 0.675rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      max-width: 100%;
+      padding-right: 20%;
+      padding-left: 7%;
+    
+    }
+h4.text-right{
+  font-weight: 18px;
+}
+    .container {
+      background-color: #f8f9fe;
+      padding: 1rem;
+      border-radius: 0.875rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      display: inline-block;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #ff748c;
+    }
+
+    .profile-button {
+      background: #ff748c;
+      box-shadow: none;
+      border: none
+    }
+
+    .profile-button:hover {
+      background: #ff748c;
+    }
+
+    .profile-button:focus {
+      background: #ff748c;
+      box-shadow: none
+    }
+
+    .profile-button:active {
+      background: #ff748c;
+      box-shadow: none
+    }
+
+    .back:hover {
+      color: #ff748c;
+      cursor: pointer
+    }
+
+    /* Set a fixed maximum width for the input text boxes */
+    .form-control {
+     padding-left: 2;
+      max-width: 95%;
+      font-size: 16px; 
+    }
+    .form-group label {
+        font-size: 20px; 
+    }
+
+   
+    
+  </style>
+</head>
+
+<body>
+  <div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+     
+      <div class="col-md-9">
+        <div class="p-3 py-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-right" style="font-size: 26px">Your Profile</h4>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-12">
+              <label class="labels">Name</label>
+              <input type="text" class="form-control" [(ngModel)]="editedUser.fullname" [disabled]="!isEditMode">
+            </div>
+            
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <label class="labels">Mobile Number</label>
+              <input type="text" class="form-control" [(ngModel)]="editedUser.mobile" [disabled]="!isEditMode">
+            </div>
+            <div class="col-md-12">
+              <label class="labels">Email ID</label>
+              <input type="text" class="form-control" [(ngModel)]="editedUser.email" [disabled]="!isEditMode" style="text-transform: lowercase">
+            </div>
+            
+          </div>
+          <div class="mt-5 text-center">
+            <button class="btn btn-primary profile-button" type="button" (click)="enableEditMode()"
+              *ngIf="!isEditMode">Edit Profile</button>
+            <button class="btn btn-primary profile-button" type="button" (click)="saveChanges()" *ngIf="isEditMode">Save
+              Changes</button>
+            <button class="btn btn-primary profile-button" type="button" (click)="cancelEdit()" *ngIf="isEditMode">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,603 @@
+
+
+<!-- <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+ 
+</head>
+<style>
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 0.6%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+ box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+ display: flex;
+ align-items: center;
+  
+          justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #222;
+}
+
+.header .logo i {
+  color:cadetblue;
+  padding-right: .5rem;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #666;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+  color:lightseagreen;
+}
+
+
+.header .icons a{
+  font-size: 2.5rem;
+  color:#666;
+  margin-right: 1000px;
+  margin:0 20px;
+}
+.header .icons a:hover{
+  color:cadetblue;
+}
+.navbar a{
+  color:#fff;
+  text-decoration: none;
+}
+
+
+</style>
+<body>
+
+  <h1>Admin Dashboard</h1>
+<div *ngIf="authService.isUserAdmin()">
+  
+</div>
+<div *ngIf="!authService.isUserAdmin()">
+
+</div>
+
+
+
+<div class="my-account">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+          <a class="nav-link" [class.active]="activeTab === 'userm-tab'" (click)="setActiveTab('dashboard-tab')" role="tab">
+            <i class="fa fa-tachometer-alt"></i>users
+          </a>
+          <a class="nav-link" [class.active]="activeTab === 'orders-tab'" (click)="setActiveTab('orders-tab')" role="tab">
+            <i class="fa fa-shopping-bag"></i>Orders
+          </a>
+          <a class="nav-link" [class.active]="activeTab === 'payment-tab'" (click)="setActiveTab('payment-tab')" role="tab">
+            <i class="fa fa-credit-card"></i>update
+          </a>
+          <a class="nav-link" [class.active]="activeTab === 'address-tab'" (click)="setActiveTab('address-tab')" role="tab">
+            <i class="fa fa-map-marker-alt"></i>ProForm
+          </a>
+          <a class="nav-link" [class.active]="activeTab === 'account-tab'" (click)="setActiveTab('account-tab')" role="tab">
+            <i class="fa fa-user"></i>contact
+          </a>
+           <a class="nav-link" router="/login"(click)="logout()"><i class="fa fa-sign-out-alt"></i>Logout</a> 
+        </div>
+      </div> -->
+      <!-- <div class="col-md-9">
+        <div class="tab-content">
+          <div *ngIf="activeTab === 'dashboard-tab'">
+            <app-userm></app-userm>
+          </div>
+          <div *ngIf="activeTab === 'orders-tab'">
+            <app-userm></app-userm>
+          </div>
+          <div *ngIf="activeTab === 'payment-tab'">
+            <app-updatem></app-updatem>
+          </div>
+          <div *ngIf="activeTab === 'address-tab'">
+            <app-ProductForm></app-ProductForm>
+          </div>
+          <div *ngIf="activeTab === 'account-tab'">
+      
+            <app-ProductForm></app-ProductForm>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<style>
+  /* Main CSS Here */
+
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+:root {
+--background-color1: #fafaff;
+--background-color2: #ffffff;
+--background-color3: #ededed;
+--background-color4: #cad7fda4;
+
+}
+body {
+background-color: var(--background-color4);
+max-width: 100%;
+overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+   background: #fff; 
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #222;
+}
+
+.header .logo span {
+  color:var(--pink);
+  padding-right: .5rem;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #666;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+  text-decoration: underline;
+  color:var(--pink);
+}
+
+
+  header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 25px;
+    }
+    header .icons a:hover{
+    color:var(--pink);
+    }
+    
+    header .icons a.value{
+       position: absolute;
+       top:0;
+       right: 0;
+       border: 1px solid var(--pink);
+       border-radius: 50% ;
+       padding:4px 10px ;
+    }
+
+    .header .navbar a.active {
+      color:var(--pink);
+    }
+.header .icons a.active {
+  color:var(--pink);
+}
+
+.logo {
+font-size: 27px;
+font-weight: 600;
+color: #fa7bb4;
+}
+
+.icn {
+height: 30px;
+}
+.menuicn {
+cursor: pointer;
+}
+
+.searchbar,
+.message,
+.logosec {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.searchbar2 {
+display: none;
+}
+
+.logosec {
+gap: 60px;
+
+}
+
+.searchbar input {
+width: 250px;
+height: 42px;
+border-radius: 50px 0 0 50px;
+background-color: var(--background-color3);
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: none;
+}
+.searchbtn {
+width: 50px;
+height: 42px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 0px 50px 50px 0px;
+background-color: var(--secondary-color);
+cursor: pointer;
+}
+
+.message {
+gap: 40px;
+position: relative;
+cursor: pointer;
+}
+.circle {
+height: 7px;
+width: 7px;
+position: absolute;
+background-color: #fa7bb4;
+border-radius: 50%;
+left: 19px;
+top: 8px;
+}
+.dp {
+height: 40px;
+width: 40px;
+background-color: #626262;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.main-container {
+display: flex;
+width: 100vw;
+position: relative;
+top: 70px;
+z-index: 1;
+
+}
+.dpicn {
+height: 42px;
+}
+
+.main {
+height: calc(100vh - 70px);
+width: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+padding: 40px 30px 30px 30px;
+}
+
+.main::-webkit-scrollbar-thumb {
+background-image:
+		linear-gradient(to bottom, rgb(85, 0, 72), rgb(50, 0, 37));
+}
+.main::-webkit-scrollbar {
+width: 5px;
+}
+.main::-webkit-scrollbar-track {
+background-color: #9e9e9eb2;
+}
+
+.box-container {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+gap: 50px;
+}
+.nav {
+min-height: 91vh;
+width: 250px;
+background-color: var(--background-color2);
+position: absolute;
+top: 0px;
+left: 00;
+box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: hidden;
+padding: 30px 0 20px 10px;
+}
+.navcontainer {
+height: calc(100vh - 70px);
+width: 250px;
+position: relative;
+overflow-y: scroll;
+overflow-x: hidden;
+transition: all 0.5s ease-in-out;
+background-color: 		#FFC0CB;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      padding-top: 0%;
+}
+.navcontainer::-webkit-scrollbar {
+display: none;
+}
+.navclose {
+width: 80px;
+}
+.nav-option {
+width: 250px;
+height: 60px;
+display: flex;
+align-items: center;
+padding: 0 30px 0 20px;
+gap: 20px;
+transition: all 0.1s ease-in-out;
+}
+.nav-option:hover {
+border-left: 5px solid #a2a2a2;
+background-color: #dadada;
+cursor: pointer;
+}
+.nav-img {
+height: 30px;
+}
+
+.nav-upper-options {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+.option1 {
+border-left: 5px solid #010058af;
+background-color: var(--Border-color);
+color: white;
+cursor: pointer;
+}
+.option1:hover {
+border-left: 5px solid #010058af;
+background-color: var(--Border-color);
+}
+.box {
+height: 130px;
+width: 230px;
+border-radius: 20px;
+box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+}
+.box:hover {
+transform: scale(1.08);
+}
+
+.box:nth-child(1) {
+background-color: var(--one-use-color);
+}
+.box:nth-child(2) {
+background-color: var(--two-use-color);
+}
+.box:nth-child(3) {
+background-color: var(--one-use-color);
+}
+.box:nth-child(4) {
+background-color: var(--two-use-color);
+}
+
+.box img {
+height: 50px;
+}
+.box .text {
+color: white;
+}
+.topic {
+font-size: 13px;
+font-weight: 400;
+letter-spacing: 1px;
+}
+
+.topic-heading {
+font-size: 30px;
+letter-spacing: 3px;
+}
+
+.nav-option.active {
+  color:#fa7bb4;
+  background-color: #dadada;
+}
+</style>
+<body>
+   
+    <!-- for header part -->
+    <!-- <header>
+ 
+        <div class="logosec">
+            <div class="logo">TimeZone</div>
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn"
+                id="menuicn"
+                alt="menu-icon">
+        </div>
+ 
+ 
+        <div class="message">
+            <div class="circle"></div>
+            <img src=
+"https://cdn-icons-png.flaticon.com/512/3581/3581812.png"
+                 class="icn"
+                 alt="">
+            <div class="dp">
+              <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn"
+                    alt="dp">
+              </div>
+        </div>
+ 
+    </header> -->
+
+    <header class="header" id="header">
+  
+      <a href="home.html" class="logo">
+          <h1>Time<span>Zone.</span></h1>
+        </a>
+        
+   <!-- <nav class="navbar">
+          <a routerLink="home">Home</a>
+          <a routerLink="product">Product</a>
+          <a routerLink="about">About</a>
+          <a routerLink="contactus">Contact Us</a>
+        </nav>
+        
+        <div class="icons">
+        
+          <a routerLink="Cart" id="cart-btn" class="fas fa-shopping-cart"></a>
+          <a routerLink="login" id="login-btn" class="fas fa-user"></a>
+        <a routerLink="login" id="login-btn" class="fa fa-sign-out"></a>  
+    
+         
+    
+        </div>
+    
+        <nav class="navbar">
+          <a routerLink="myaccount">My Account</a>
+        </nav>
+  
+     -->  <div class="message">
+      <div class="circle"></div>
+      <img src=
+"https://cdn-icons-png.flaticon.com/512/3581/3581812.png"
+           class="icn"
+           alt="">
+      <div class="dp">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+              class="dpicn"
+              alt="dp">
+        </div>
+  </div>
+   
+    </header>  
+ 
+    <div class="main-container">
+      <div class="navcontainer">
+        <nav class="nav">
+          <div class="nav-upper-options">
+            <div class="option2 nav-option" [class.active]="activeTab === 'user-details'" (click)="setActiveTab('user-details')" role="tab">
+              <img src=
+              "https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/user-female-circle-pink-512.png"
+                                          class="nav-img"
+                                          alt="articles">
+              <h3>User Details</h3>
+            </div>
+    
+
+            
+            <div class="nav-option option3" [class.active]="activeTab === 'update-details'" (click)="setActiveTab('update-details')" role="tab">
+              <img src=
+"https://cdn.iconscout.com/icon/premium/png-256-thumb/love-update-4933579-4104627.png?f=webp"
+                            class="nav-img"
+                            alt="report">
+                        
+              <h3>Update Details</h3>
+            </div>
+    
+            <div class="nav-option option4" [class.active]="activeTab === 'product-form'" (click)="setActiveTab('product-form')" role="tab">
+              <img src=
+"https://listimg.pinclipart.com/picdir/s/374-3743515_icon-12-clipboard-icon-font-awesome-png-download.png"
+                            class="nav-img"
+                            alt="institution">
+              <h3>Product Form</h3>
+            </div>
+    
+            <div class="nav-option logout" (click)="logout()">
+              <img src=
+              "https://images.assetsdelivery.com/compings_v2/iconhome/iconhome2211/iconhome221102340.jpg"
+                                          class="nav-img"
+                                          alt="logout">
+              <h3>Logout</h3>
+            </div>
+          </div>
+        </nav>
+      </div>
+        <div class="col-md-9">
+          <div class="tab-content">
+            <div *ngIf="activeTab === 'user-details'">
+              <app-userm></app-userm>
+            </div>
+       
+            <div *ngIf="activeTab === 'update-details'">
+              <app-updatem></app-updatem>
+            </div>
+            <div *ngIf="activeTab === 'product-form'">
+              <app-ProductForm></app-ProductForm>
+            </div>
+            <div *ngIf="activeTab === 'account-tab'">
+        
+              <app-ProductForm></app-ProductForm>
+          </div>
+        </div>
+      </div>
+    </div>

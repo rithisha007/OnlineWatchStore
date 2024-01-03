@@ -1,0 +1,85 @@
+
+
+<style>* {
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+}
+.form-box {
+	background-color:#FFB6C1; 
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	position: absolute;
+	top: 1%;
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 500px;
+}
+.form-box:before {
+ 
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 17%;
+	right: 0;
+	top: 13%;
+	z-index: -1;
+	display: block;
+	filter: blur(2px);
+}
+
+.form-box input {
+	margin: 8px 0px;
+	border: none;
+	padding: 4px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
+}
+
+.form-box button {
+	background-color: deepskyblue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+span a {
+	color: #BBB;
+}
+</style>
+
+<body>
+   
+	<div class="form-box">
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()"></form>
+	
+        <input placeholder="Product Id" type="number" id="id" formControlName="title" required> 
+        <input placeholder="Title" type="text" id="title" formControlName="title" required> 
+        <input placeholder="Price" type="number" id="price" formControlName="price" required> 
+        <input placeholder="Description" type="text" id="title" formControlName="title" required> 
+        <input placeholder="Title" textarea id="description" formControlName="description"> 
+        <input placeholder="Image: " type="file" id="imageInput" (change)="onImageSelected($event)" accept="image/*"> 
+        <input placeholder="Category"  type="text" id="category" formControlName="category" required> 
+        
+        
+        <button type="submit">Submit</button>
+	</div>
+
+</body>
+
+
+

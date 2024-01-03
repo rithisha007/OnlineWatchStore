@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Authservice } from './auth.service';
 
 declare var name:any;
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent {
   title = '1st-app';
    products:any;
 
-   constructor()
+   constructor(public authService: Authservice)
 {}
 
   

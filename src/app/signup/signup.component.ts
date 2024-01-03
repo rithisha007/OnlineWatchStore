@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -11,27 +12,46 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
   public signupForm !: FormGroup;
+  showPassword: boolean = false;
   constructor( private formbuilder : FormBuilder, private http:HttpClient, private router:Router ) { }
 
   ngOnInit() {
     this.signupForm = this.formbuilder.group({
       fullname:['',[Validators.required,Validators.minLength(3)]],
-      email:['',[Validators.required,Validators.email]],
-      password:['',[Validators.required,Validators.minLength(6)]],
-      mobile:['',[Validators.required,Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]]
+      email: ['', [Validators.required, Validators.pattern(/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/)]],
+     password:[],
+      mobile: ['', [Validators.required, Validators.pattern(/^[6789]\d{9}$/)]]
+      
     })
 }
-signup(){
-  this.http.post<any>("http://localhost:3000/signup",this.signupForm.value)
-  .subscribe(res=>{
-    alert("Sign up successfull")
-    this.signupForm.reset();
-    this.router.navigate(['login']);
-  },err=>{
-    alert("something went wrong")
+signup() {
+  const email = this.signupForm.value.email; 
+  const userDetailsUrl = `${environment.UserDetails}?email=${email}`;
 
-  })
+  this.http.get<any[]>(userDetailsUrl).subscribe(
+    (data) => {
+      if (data.length > 0) {
+        alert('Email already exists');
+      } else {
+       
+        this.http.post<any>(environment.UserDetails, this.signupForm.value).subscribe(
+          () => {
+            alert('Sign up successful');
+            this.signupForm.reset();
+            this.router.navigate(['login']);
+          },
+          () => {
+            alert('Something went wrong');
+          }
+        );
+      }
+    },
+    () => {
+      alert('Something went wrong');
+    }
+  );
 }
-
-
-  }
+togglePassword() {
+  this.showPassword = !this.showPassword;
+}
+}

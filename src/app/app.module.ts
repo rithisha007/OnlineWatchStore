@@ -18,14 +18,27 @@ import { WomensComponent } from './Womens/Womens.component';
 import { MensComponent } from './Mens/Mens.component';
 import { CouplesComponent } from './Couples/Couples.component';
 import { KidsComponent } from './Kids/Kids.component';
-import { CartComponent } from './Cart/Cart.component';
+ import { CartComponent } from './Cart/Cart.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LogoutComponent } from './logout/logout.component';
+import { ProductDescriptionComponent } from './Product-description/Product-description.component';
+import { RouterModule } from '@angular/router';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { MyAccountComponent } from './MyAccount/MyAccount.component';
+import { DashboardComponent } from './Dashboard/Dashboard.component';
+import { OrdersComponent } from './Orders/Orders.component';
+import { PaymentComponent } from './Payment/Payment.component';
+import { AddressComponent } from './Address/Address.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
+
+
+
 
 
 @NgModule({
-  declarations: [																						
+  declarations: [																																												
     AppComponent,
       HeaderComponent,
       HomeComponent,
@@ -42,12 +55,21 @@ import { HttpClientModule } from '@angular/common/http';
       MensComponent,
       CouplesComponent,
       KidsComponent,
-      CartComponent,
+     CartComponent,
       LoginComponent,
-      SignupComponent
+      SignupComponent,
+      LogoutComponent,
+      ProductDescriptionComponent,
+      CheckoutComponent,
+      MyAccountComponent,
+      DashboardComponent,
+      OrdersComponent,
+      PaymentComponent,
+      AddressComponent,
+      ThankyouComponent
    ],
   imports: [
-    BrowserModule,FormsModule,AppRoutingModule,ReactiveFormsModule,HttpClientModule
+    BrowserModule,FormsModule,AppRoutingModule,ReactiveFormsModule,HttpClientModule,RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

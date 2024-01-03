@@ -1,12 +1,32 @@
 #heading{
-    background-image: url("../assets/images/titan banner.avif");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 27rem;
-  padding-bottom: 8rem;
+  background-image: url("https://cdn.shopify.com/s/files/1/1986/6175/files/contact_1.jpg?v=1511826945");
+background-size: cover;
+background-position: center;
+text-align: center;
+padding-top: 27rem;
+padding-bottom: 8rem;
 }
-.contact .icons-container {
+.heading h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+.heading p {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.heading p a {
+  color: white;
+  padding-right: .5rem;
+}
+
+.heading p a:hover {
+  color:var(--pink);
+}
+
+.contact .icons-container1 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
@@ -14,13 +34,13 @@
     gap: 1.5rem;
   }
   
-  .contact .icons-container .icons {
+  .contact .icons-container1 .icons {
     text-align: center;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     
   }
   
-  .contact .icons-container .icons i {
+  .contact .icons-container1 .icons i {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
@@ -29,13 +49,13 @@
     border-radius: 50%;
   }
   
-  .contact .icons-container .icons h3 {
+  .contact .icons-container1 .icons h3 {
     color: #222;
     font-size: 2rem;
     padding: 1rem 0;
   }
   
-  .contact .icons-container .icons p {
+  .contact .icons-container1 .icons p {
     color: #666;
     font-size: 1.5rem;
     line-height: 2;

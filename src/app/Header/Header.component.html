@@ -1,19 +1,33 @@
+
 <header class="header" id="header">
-
-  <a href="hme.html" class="logo"><h1>Time<span>zone.</span></h1></a>
-  <nav class="navbar">
-      <a routerLink="home">Home</a>
-      <a routerLink="product">Product</a>
-      <a routerLink="about">About</a>
-      <a routerLink="contactus">Contactus</a>
-      
-  </nav>
-
-  <div class="icons">
-      <a href="#" class="fas fa-heart"></a>
-      <a routerLink="Cart"  id="cart-btn" class="fas fa-shopping-cart"></a>
-      <a routerLink="login" id="login-btn" class="fas fa-user"></a>
-  </div>
-
   
-  </header>
+  <a href="home.html" class="logo">
+      <h1>Time<span>Zone.</span></h1>
+    </a>
+    
+    <nav class="navbar">
+      <a routerLink="home" [class.active]="activeTab === 'Home'">Home</a>
+      <a routerLink="product" [class.active]="activeTab === 'Product'">Product</a>
+      <a routerLink="about" [class.active]="activeTab === 'About'">About</a>
+      <a routerLink="contactus" [class.active]="activeTab === 'Contact Us'">Contact Us</a>
+    </nav>
+    
+    <div class="icons">
+      <a routerLink="Cart" id="cart-btn" class="fas fa-shopping-cart" [class.active]="activeTab === 'Cart'"></a>
+      <a routerLink="login" id="login-btn" class="fas fa-user" [class.active]="activeTab === 'Login'"></a>
+      <!-- <a routerLink="login" id="login-btn" ><i class="fa fa-sign-out" [class.active]="activeTab === 'Login'"></i></a> -->
+      <a routerLink="login" id="login-btn" class="fas fa-sign-out-alt" [class.active]="activeTab === 'Logout'" (click)="logout()">
+      
+      </a>
+    </div>
+
+    <nav class="navbar">
+  <a routerLink="myaccount" [class.active]="activeTab === 'My Account'">My Account</a>
+</nav>
+
+    
+  
+
+
+</header>  
+  

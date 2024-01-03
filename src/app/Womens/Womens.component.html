@@ -1,3 +1,166 @@
-<p>
-  Womens works!
-</p>
+<style>
+ :root {
+      --pink: #ff748c;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .box-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); 
+      gap: 3.5rem;
+      text-align: center;
+      padding: 5%;
+      padding-top: 1%;
+    }
+
+    .box {
+      width: 100%; 
+      position: relative;
+      background: #f3f3f3;
+      text-align: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .grid-container {
+ grid-template-columns: repeat(4, minmax(20%, 1fr)); 
+}
+    
+ .box-container .box:hover .icons {
+  top: 0;
+}
+
+.box-container .box .icons {
+  position: absolute;
+  top: -105%;
+  left: 0;
+  height: 30rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(243, 243, 243, 0.8);
+  gap: 1rem;
+}
+
+ .box-container .box .icons a {
+  font-size: 2rem;
+  height: 5rem;
+  width: 20rem;
+  line-height: 5rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  color: #666;
+}
+
+.box-container .box .icons a:hover {
+  color:var(--pink);
+  
+}
+
+ .box-container .box .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ .box-container .box .content {
+  padding: 1.5rem;
+}
+
+ .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #222;
+}
+
+ .box-container .box .content .price {
+  font-size: 2rem;
+  color: #222;
+  padding: 1rem 0;
+}
+.box-container .box .content .rating i {
+    font-size: 1.7rem;
+    color: var(--pink);
+  }
+  .rating i {
+    font-size: 1.7rem;
+    color: var(--pink);
+  }
+ 
+
+</style>
+
+
+<div class="heading" id="heading">
+  <h1>our shop</h1>
+  <p> <a href="/product">shop >></a>HER</p>
+  
+</div>
+
+
+<section class="products">
+  <h1 class="title"> Brand-<span> Women's Collection</span>  </h1><br><br>
+  <div class="box-container">
+  <div *ngFor="let product of products" class="box">
+    <a [routerLink]="['/products', product.id]"> 
+      <div class="icons">
+      <a href="#" class="fas fa-eye">View more</a>
+    </div>      
+  <div class = "image">
+     <img [src]="product.thumbnail" alt="{{ product.title }}" />
+  </div>
+
+      <div class = "content">
+          <div class = "product-info-top">
+            <h3>{{ product.title }}</h3>
+          </div>
+          <p>Price: {{ product.price }}</p>
+          <div class = "rating">
+              <span><i class = "fas fa-star"></i></span>
+              <span><i class = "fas fa-star"></i></span>
+              <span><i class = "fas fa-star"></i></span>
+              <span><i class = "fas fa-star"></i></span>
+              <span><i class = "far fa-star"></i></span>
+          </div><br>
+      </div>
+    </a>
+  </div>
+ 
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
