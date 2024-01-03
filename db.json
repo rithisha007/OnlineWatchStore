@@ -8,11 +8,265 @@
   ],
   "signup": [
     {
-      "fullname": "Rithisha s",
+      "fullname": "Rithu s",
       "email": "rithisha@gmail.com",
       "password": "rithu1234567",
-      "mobile": 9344738305,
-      "id": 1
+      "mobile": "9344738304",
+      "id": 1,
+      "ordered": [
+        {
+          "title": "Lagan Sikver Strap Watch",
+          "price": 3280,
+          "quantity": 1,
+          "fullPrice": 3280,
+          "userId": 1
+        },
+        {
+          "title": "Raga facets analog ",
+          "price": 1549,
+          "quantity": 2,
+          "fullPrice": 3098,
+          "userId": 1
+        },
+        {
+          "title": "raga viva 4",
+          "price": 1899,
+          "quantity": 1,
+          "fullPrice": 1899,
+          "userId": 1
+        }
+      ],
+      "totalAmount": 8277,
+      "address": "10-3/28 PERIYAR STREET ATTAYAMPATTI,SALEM TN.",
+      "pincode": "637501"
+    },
+    {
+      "fullname": "Sandy",
+      "email": "2k19cse083@kiot.ac.in",
+      "password": "sandy123",
+      "mobile": 9361345678,
+      "id": 2,
+      "ordered": [
+        {
+          "title": "Raga facets analog ",
+          "price": 1549,
+          "quantity": 3,
+          "fullPrice": 4647,
+          "userId": 2
+        },
+        {
+          "title": "White Dial Watch",
+          "price": 280,
+          "quantity": 2,
+          "fullPrice": 560,
+          "userId": 2
+        },
+        {
+          "title": "raga viva 4",
+          "price": 1899,
+          "quantity": 2,
+          "fullPrice": 3798,
+          "userId": 2
+        }
+      ],
+      "totalAmount": 9005,
+      "address": "10-3/28 PERIYAR STREET ATTAYAMPATTI,SALEM TN.",
+      "pincode": "637501"
+    },
+    {
+      "fullname": "Rohithkumar S",
+      "email": "rohith@gmail.com",
+      "password": "rohith1234567",
+      "mobile": 9500488566,
+      "id": 3
+    },
+    {
+      "fullname": "Admin",
+      "email": "Admin007@gmail.com",
+      "password": "admin007",
+      "mobile": 9344738306,
+      "id": 4
+    },
+    {
+      "fullname": "rinku",
+      "email": "rinku@gmail.com",
+      "password": "Rinku007",
+      "mobile": "9500488588",
+      "id": 5,
+      "address": "",
+      "pincode": "",
+      "ordered": [
+        {
+          "title": "Raga facets analog ",
+          "price": 1549,
+          "quantity": 1,
+          "fullPrice": 1549,
+          "userId": 5
+        },
+        {
+          "title": "Black Dial Strap Watch",
+          "price": 499,
+          "quantity": 1,
+          "fullPrice": 499,
+          "userId": 5
+        }
+      ],
+      "totalAmount": 2048
+    },
+    {
+      "fullname": "shiva",
+      "email": "shiva@gmail.com",
+      "password": "shiva001",
+      "mobile": "8775667883",
+      "id": 6,
+      "address": "",
+      "pincode": "",
+      "ordered": [
+        {
+          "title": "Raga facets analog ",
+          "price": 1549,
+          "quantity": 1,
+          "fullPrice": 1549,
+          "userId": 6
+        },
+        {
+          "title": "Dial Rose gold Watch",
+          "price": 1249,
+          "quantity": 1,
+          "fullPrice": 1249,
+          "userId": 6
+        }
+      ],
+      "totalAmount": 2798
+    },
+    {
+      "fullname": "sharan b",
+      "email": "sharan@gmail.com",
+      "password": "Sharan@123",
+      "mobile": "9344566788",
+      "id": 7
+    },
+    {
+      "fullname": "daisy",
+      "email": "daisy@gmail.com",
+      "password": "daisy123",
+      "mobile": "9100488500",
+      "id": 8
+    }
+  ],
+  "CartItems": [
+    {
+      "userEmail": null,
+      "productId": 1,
+      "title": "Raga facets analog ",
+      "price": 1549,
+      "quantity": 1,
+      "id": 19
+    },
+    {
+      "userEmail": null,
+      "productId": 1,
+      "title": "Raga facets analog ",
+      "price": 1549,
+      "quantity": 1,
+      "id": 20
+    },
+    {
+      "userEmail": null,
+      "productId": 1,
+      "title": "Raga facets analog ",
+      "price": 1549,
+      "quantity": 1,
+      "id": 21
+    },
+    {
+      "userEmail": null,
+      "productId": 1,
+      "title": "Raga facets analog ",
+      "price": 1549,
+      "quantity": 1,
+      "id": 27
+    },
+    {
+      "userEmail": null,
+      "productId": 10,
+      "title": "White Dial Watch",
+      "price": 3280,
+      "quantity": 1,
+      "id": 28
+    },
+    {
+      "userEmail": null,
+      "productId": 2,
+      "title": "raga viva 4",
+      "price": 1899,
+      "quantity": 1,
+      "id": 29
+    },
+    {
+      "userEmail": null,
+      "productId": 2,
+      "title": "raga viva 4",
+      "price": 1899,
+      "quantity": 1,
+      "id": 30
+    },
+    {
+      "userEmail": "rinku@gmail.com",
+      "productId": 5,
+      "title": "Olivia burton  Analog White",
+      "price": 2499,
+      "quantity": 1,
+      "id": 31
+    },
+    {
+      "userEmail": "sharan@gmail.com",
+      "productId": 1,
+      "title": "Raga facets analog ",
+      "price": 1549,
+      "quantity": 2,
+      "id": 32,
+      "description": "An apple mobile which is nothing like apple",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/z/f/u/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imagkfhqprznzvag.jpeg?q=70",
+      "fullPrice": "Rs.3098.00"
+    },
+    {
+      "userEmail": "sharan@gmail.com",
+      "productId": 2,
+      "title": "raga viva 4",
+      "price": 1899,
+      "quantity": 2,
+      "id": 33,
+      "description": "Dial Color : Silver Sunray and Floral Gradient Mother Of Pearl and Hummingbird  Dial Shape : Round , Dial Diameter : 34 mm",
+      "thumbnail": "https://m.media-amazon.com/images/I/61wGIjOnV5L._UX679_.jpg",
+      "fullPrice": "Rs.3798.00"
+    },
+    {
+      "userEmail": "sharan@gmail.com",
+      "productId": 3,
+      "title": "Dial Rose gold Watch",
+      "price": 1249,
+      "quantity": 2,
+      "id": 34,
+      "description": "Dial Color : Pink To Green Gradient Mother Of Pearl & Hummingbird & Stone , Dial Shape : Round , Dial Diameter : 34 mm,Strap Material : Stainless Steel , Strap Color : Rose Gold ",
+      "thumbnail": "https://m.media-amazon.com/images/I/51j7DD2Sl+L._UX679_.jpg",
+      "fullPrice": "Rs.2498.00"
+    },
+    {
+      "userEmail": "2k19cse083@kiot.ac.in",
+      "productId": 1,
+      "title": "Raga facets analog ",
+      "price": 1549,
+      "quantity": 1,
+      "id": 35
+    },
+    {
+      "userEmail": "2k19cse083@kiot.ac.in",
+      "productId": 2,
+      "title": "raga viva 4",
+      "price": 1899,
+      "quantity": 3,
+      "id": 36
     }
   ],
   "profile": {
@@ -21,90 +275,291 @@
   "products": [
     {
       "id": 1,
-      "title": "iPhone 9",
-      "description": "An apple mobile which is nothing like apple",
-      "price": 549,
+      "title": "Raga facets analog ",
+      "description": "Stylish contemporary multifunction design",
+      "price": 1549,
       "discountPercentage": 12.96,
       "rating": 4.69,
       "stock": 94,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "brand": "Raga Titan",
+      "category": "women watches",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/z/f/u/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imagkfhqprznzvag.jpeg?q=70",
       "images": [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
-        "https://i.dummyjson.com/data/products/1/2.jpg",
-        "https://i.dummyjson.com/data/products/1/3.jpg",
-        "https://i.dummyjson.com/data/products/1/4.jpg",
-        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/m/r/d/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imagmgp78gmkrhgs.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/c/w/5/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imagmgp7b3cadnkn.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/2/x/b/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imagkphnyxvbfnz4.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/z/n/c/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imafujb65agxahez.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/e/h/r/1-rose-gold-color-stylish-titli-butterfly-magnet-watch-marclex-original-imafyg7hndw7hzh8.jpeg?q=70"
       ]
     },
     {
       "id": 2,
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
+      "title": "raga viva 4",
+      "description": "Dial Color : Silver Sunray and Floral Gradient Mother Of Pearl and Hummingbird  Dial Shape : Round , Dial Diameter : 34 mm",
+      "price": 1899,
       "discountPercentage": 17.94,
       "rating": 4.44,
       "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "brand": " Olivia Burton",
+      "category": "women watches",
+      "thumbnail": "https://m.media-amazon.com/images/I/61wGIjOnV5L._UX679_.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+        "https://m.media-amazon.com/images/I/61wGIjOnV5L._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/61H0qWKyEmL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/51qWmwtALZL._UX679_.jpg"
       ]
     },
     {
       "id": 3,
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "title": "Dial Rose gold Watch",
+      "description": "Dial Color : Pink To Green Gradient Mother Of Pearl & Hummingbird & Stone , Dial Shape : Round , Dial Diameter : 34 mm,Strap Material : Stainless Steel , Strap Color : Rose Gold ",
       "price": 1249,
       "discountPercentage": 15.46,
       "rating": 4.09,
       "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "brand": " Olivia Burton",
+      "category": "women watches",
+      "thumbnail": "https://m.media-amazon.com/images/I/51j7DD2Sl+L._UX679_.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
+        "https://m.media-amazon.com/images/I/61HYslYyOjL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/61K9aqS5xnL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/41GkJFhgMyL._UX679_.jpg"
       ]
     },
     {
       "id": 4,
-      "title": "OPPOF19",
-      "description": "OPPO F19 is officially announced on April 2021.",
-      "price": 280,
+      "title": "Lagan Sikver Strap Watch",
+      "description": "Dial Color : Black & Floral Gradient Mother Of Pearl & Hummingbird & Stone , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 3280,
       "discountPercentage": 17.91,
       "rating": 4.3,
       "stock": 123,
-      "brand": "OPPO",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "brand": " Olivia Burton",
+      "category": "women watches",
+      "thumbnail": "https://m.media-amazon.com/images/I/81BxIgKKjFL._UX679_.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+        "https://m.media-amazon.com/images/I/81OKwlX5SVL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/81GCuSqdF2L._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/61DU4WKatbL._UX679_.jpg"
       ]
     },
     {
       "id": 5,
-      "title": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-      "price": 499,
+      "title": "Olivia burton  Analog White",
+      "description": "Dial Color : White & Stone & Pearl & Shell Stud & Star Fish Stud , Dial Shape : Round , Dial Diameter : 30 mm.",
+      "price": 2499,
       "discountPercentage": 10.58,
       "rating": 4.09,
       "stock": 32,
-      "brand": "Huawei",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      "brand": " Olivia Burton",
+      "category": "women watches",
+      "thumbnail": "https://m.media-amazon.com/images/I/615JwCbVI9L._UX679_.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
+        "https://m.media-amazon.com/images/I/51-UzXENJJL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/51fbdu2j9YL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/61G-W2zcsDL._UX679_.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Rainbow Analog Multi DialWatch",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 3280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": " Olivia Burton",
+      "category": "women watches",
+      "thumbnail": "https://m.media-amazon.com/images/I/61SCkRgT+sL._UX679_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/618lutoDQYL._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/61mtdLtRM7L._UX679_.jpg",
+        "https://m.media-amazon.com/images/I/61DU4WKatbL._UX679_.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Titan Neo Analog Rose Gold Dial ",
+      "description": "Stylish contemporary multifunction design",
+      "price": 4280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": " Titan",
+      "category": "women watches",
+      "thumbnail": "https://m.media-amazon.com/images/I/71+9sevJ53L._UX522_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/71HhLLD++FL._UX522_.jpg",
+        "https://m.media-amazon.com/images/I/517jrYjYOXL._UX522_.jpg",
+        "https://m.media-amazon.com/images/I/71+9sevJ53L._UX522_.jpg",
+        "https://m.media-amazon.com/images/I/61DU4WKatbL._UX679_.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Green Dial Watch",
+      "description": "Stylish contemporary multifunction design",
+      "price": 5280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/kylvr0w0/shopsy-watch/7/a/k/2-latest-beautiful-brendy-designer-septem-girls-original-imagasq4gcuhuatr.jpeg?q=70",
+      "images": [
+        "https://rukminim1.flixcart.com/image/128/128/kh6lg280-0/watch/6/y/o/shiny-and-slim-designer-septem-original-imafx99hkmesryrg.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/kh6lg280-0/watch/v/1/4/shiny-and-slim-designer-septem-original-imafx99hdnkgg7hj.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/kh6lg280-0/watch/3/f/l/shiny-and-slim-designer-septem-original-imafx99hfn4mwwdn.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/kh6lg280-0/watch/1/j/i/shiny-and-slim-designer-septem-original-imafx99hsvehjpha.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/kh6lg280-0/watch/q/b/e/shiny-and-slim-designer-septem-original-imafx99hgwdvntyc.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "OPPOF19",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 1880,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/l09w8sw0/watch/e/b/n/-original-imagc3ey7s4pjnpz.jpeg?q=70",
+      "images": [
+        "https://rukminim1.flixcart.com/image/128/128/kingqkw0-0/watch/5/v/u/dk11914-2-daniel-klein-original-imafye2hbzeh58f5.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/kingqkw0-0/watch/g/q/y/dk11914-2-daniel-klein-original-imafye2hzfdgjnyg.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/ked56kw0-0/watch/s/a/w/dk11914-2-daniel-klein-original-imafv29xp2eshznr.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/l0bbonk0/watch/i/g/b/-original-imagc4guzxzw8znx.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/l09w8sw0/watch/x/s/i/-original-imagc3ey8yr4yjwa.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "White Dial Watch",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 3280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/a/x/5/-original-imagg7wgakyqghas.jpeg?q=70",
+      "images": [
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/c/y/q/-original-imagkgs5hc5x8mpz.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/xif0q/watch/z/i/3/-original-imagg7wgtavh9ph9.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/xif0q/watch/s/a/0/-original-imagg7wgs9wtyzw9.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/xif0q/watch/o/l/z/-original-imagg7wg8gbrgr4u.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Mystiq Raga Joy Watch",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 2300,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/g/d/x/-original-imagqfwbbdyhgjza.jpeg?q=70",
+      "images": [
+        "https://rukminim1.flixcart.com/image/128/128/l15bxjk0/watch/3/j/n/-original-imagcs3fgez8bzhz.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/k3hmj680/watch/s/e/b/87030pl04-sonata-original-imafmhr4ynnvy9p5.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/k3hmj680/watch/s/e/b/87030pl04-sonata-original-imafmhr3jwt29er9.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/k3hmj680/watch/s/e/b/87030pl04-sonata-original-imafmhr38hamdmq9.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/k3hmj680/watch/s/e/b/87030pl04-sonata-original-imafmhr4e2g4efeh.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Pearl Ceramic Watch",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 4280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim1.flixcart.com/image/832/832/xif0q/watch/y/v/e/-original-imagqrchtqkaeagj.jpeg?q=70",
+      "images": [
+        "https://rukminim1.flixcart.com/image/128/128/k73nlow0/watch/d/u/n/6210sl01-fastrack-original-imafpe7edtq2q6np.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/km2clu80/watch/t/e/f/6210sl01-fastrack-original-imagffqffabtk9gs.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/k73nlow0/watch/d/u/n/6210sl01-fastrack-original-imafpe7eetm2zhbj.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/128/128/ku8pbbk0/watch/6/w/z/nn6210sl01-fastrack-women-original-imag7ey4ymeztvaq.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "MAGNET SKY QUARTZ",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm.",
+      "price": 2880,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim2.flixcart.com/image/832/832/l47cu4w0/watch/2/o/l/2-mgbrc002-combo-new-generation-rose-gold-magnet-strap-watch-and-original-imagf5dahvcnx5qn.jpeg?q=70",
+      "images": [
+        "https://rukminim2.flixcart.com/image/832/832/l47cu4w0/watch/d/e/g/2-mgbrc002-combo-new-generation-rose-gold-magnet-strap-watch-and-original-imagf5da3r6hfq8u.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/g/w/k/1-mag-2-luxury-mesh-magnet-buckle-starry-sky-quartz-watches-for-original-imagqvrgdgfsqmzx.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/k3g73bk0/watch/s/j/c/magnet-glxy-02-rose-gold-knack-original-imafem83rawuggec.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kbb49zk0/watch/g/q/q/mag-2-luxury-mesh-magnet-buckle-starry-sky-quartz-watches-for-original-imafzh3cxthutjwr.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "JARGON BLACK DIAL WATCH",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 1990,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/q/m/u/-original-imagrk9sdgazgsqe.jpeg?q=70",
+      "images": [
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/i/d/i/-original-imagqhvffjgtbfzq.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/s/t/5/-original-imagmyct6nsmdbrv.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kbb49zk0/watch/m/y/i/l-821-black-analog-bangle-round-dial-quartz-women-watch-amino-original-imafekyq3pyfyqyf.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kbb49zk0/watch/f/y/z/l-821-black-analog-bangle-round-dial-quartz-women-watch-amino-original-imafdzzhhfjhwgeu.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "WHITISH PEARL WATCH",
+      "description": "Dial Color : Rainbow Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 1500,
+      "discountPercentage": 17.91,
+      "rating": 4.5,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/x/v/h/1-ob16wd102-olivia-burton-women-original-imagrf96bwjyghhb.jpeg?q=70",
+      "images": [
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/5/h/d/1-ob16wd102-olivia-burton-women-original-imagrf96ycws9gzy.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/x/v/h/1-ob16wd102-olivia-burton-women-original-imagrf96bwjyghhb.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/u/5/r/1-ob16wd95-olivia-burton-women-original-imagrf95kehgqzf4.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/m/4/i/1-ob16wd95-olivia-burton-women-original-imagrf95gdgkmayu.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/i/q/t/1-ob16wd95-olivia-burton-women-original-imagrf95b7hzsmag.jpeg?q=70"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "BRONZE PATTERN ANALOG WATCH",
+      "description": "Dial Color : Bronze Mother Of Pearlgradient with multi colors , Dial Shape : Round , Dial Diameter : 38 mm",
+      "price": 2500,
+      "discountPercentage": 17.91,
+      "rating": 4.4,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "women watches",
+      "thumbnail": "https://rukminim2.flixcart.com/image/832/832/kq8dua80/watch/m/b/i/vh000028c-van-heusen-original-imag4aa8bhbyvyxf.jpeg?q=70",
+      "images": [
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/3/k/m/-original-imags7trn4thzndm.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kq8dua80/watch/a/p/p/vh000028c-van-heusen-original-imag4aa8hhcuthqy.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kq8dua80/watch/w/9/e/vh000028c-van-heusen-original-imag4aa8hf3zkj9r.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kq8dua80/watch/g/y/s/vh000028c-van-heusen-original-imag4aa8qygmu8ac.jpeg?q=70",
+        "https://rukminim2.flixcart.com/image/832/832/kq8dua80/watch/g/m/5/vh000028c-van-heusen-original-imag4aa8mgv73ahg.jpeg?q=70"
       ]
     }
   ]

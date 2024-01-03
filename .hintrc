@@ -6,7 +6,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
     ],
     "compat-api/html": [
@@ -31,6 +32,25 @@
       "default",
       {
         "duplicate-id-aria": "off"
+      }
+    ],
+    "meta-viewport": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-ms-filter",
+          "-ms-text-size-adjust",
+          "width: fit-content"
+        ]
+      }
+    ],
+    "disown-opener": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-required-children": "off",
+        "aria-required-parent": "off"
       }
     ]
   }

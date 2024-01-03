@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>this is rithu app</title>
+  <title>this is rithu app</title>s
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -21,8 +21,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  -->
-
+  <link rel="stylesheet" href="C:\Users\rithi\angularsite\1st-app\src\assets\css\flex.css">
 
 </head>
 <style>
@@ -42,7 +41,7 @@
 }
 
 :root{
-  --pink:hsl(315, 99%, 57%);
+  --pink:#ff748c;
 }
 
 html {
@@ -134,10 +133,6 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  /* background-image: url("../assets/images/footer.webp");
-/* background:url(../images/newsletter-bg.jpg) no-repeat; 
-background-size: cover;
-background-position: center; */
    background: #fff; 
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -194,7 +189,12 @@ background-position: center; */
        padding:4px 10px ;
     }
 
-
+    .header .navbar a.active {
+      color:var(--pink);
+    }
+.header .icons a.active {
+  color:var(--pink);
+}
 @-webkit-keyframes fadeLeft {
   0% {
     -webkit-transform: translateX(-5rem);
@@ -227,7 +227,7 @@ background-position: center; */
   }
 }
 
-.home {
+ .home {
   padding-top: 7rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -633,7 +633,7 @@ background-position: center; */
 .products .box-container .box .content .stars i {
   font-size: 1.7rem;
   color:var(--pink);
-}
+} 
 
 .about {
   display: -webkit-box;
@@ -728,7 +728,7 @@ background-position: center; */
   margin: 0 1.5rem;
 }
 
-.gallery .box-container .box .icons a:hover {
+.gallery .box-container .box .iconssS a:hover {
   color:var(--pink);
 }
 
@@ -887,104 +887,7 @@ background-position: center; */
   padding: 1rem 0;
 }
 
-.contact .icons-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-  gap: 1.5rem;
-}
 
-.contact .icons-container .icons {
-  text-align: center;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  
-}
-
-.contact .icons-container .icons i {
-  height: 6rem;
-  width: 6rem;
-  line-height: 6rem;
-  font-size: 2.5rem;
-  color:var(--pink);
-  border-radius: 50%;
-}
-
-.contact .icons-container .icons h3 {
-  color: #222;
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-
-.contact .icons-container .icons p {
-  color: #666;
-  font-size: 1.5rem;
-  line-height: 2;
-}
-
-.contact .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  border-color: var(--pink);
-}
-
-.contact .row form {
-  padding: 2rem;
-  /* border: 0.1rem solid rgba(0, 0, 0, 0.1); */
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  border-color: var(--pink);
-}
-
-.contact .row form h3 {
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
-  color: var(--pink);
-}
-
-.contact .row form .inputBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.contact .row form .inputBox input {
-  width: 49%;
-}
-
-.contact .row form .inputBox .box,
-.contact .row form textarea {
-  padding: 1rem 1.2rem;
-  font-size: 1.6rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  color:var(--pink);
-  text-transform: none;
-  margin: .7rem 0;
-}
-
-.contact .row form textarea {
-  width: 100%;
-  height: 15rem;
-  resize: none;
-}
-
-.contact .row .map {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  width: 100%;
-}
 .newsletter{
   background-image: url("C:/Users/rithi/angularsite/1st-app/src/assets/images/new1.webp")no-repeat;
   /* background:url(../images/newsletter-bg.jpg) no-repeat; */
@@ -1156,7 +1059,7 @@ background-position: center; */
   }
 }
 
-/*cart.css */
+
 
 </style>
 <body >
@@ -1170,6 +1073,7 @@ background-position: center; */
   <app-Footer></app-Footer>
   <app-Header></app-Header>
   <app-Cart></app-Cart>
+ 
   <script src="assets/js/Home.js"></script>
 </body>
 </html>
