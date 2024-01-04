@@ -15,13 +15,6 @@
       "id": 1,
       "ordered": [
         {
-          "title": "Lagan Sikver Strap Watch",
-          "price": 3280,
-          "quantity": 1,
-          "fullPrice": 3280,
-          "userId": 1
-        },
-        {
           "title": "Raga facets analog ",
           "price": 1549,
           "quantity": 2,
@@ -36,9 +29,9 @@
           "userId": 1
         }
       ],
-      "totalAmount": 8277,
-      "address": "10-3/28 PERIYAR STREET ATTAYAMPATTI,SALEM TN.",
-      "pincode": "637501"
+      "totalAmount": 4997,
+      "address": "",
+      "pincode": ""
     },
     {
       "fullname": "Sandy",
